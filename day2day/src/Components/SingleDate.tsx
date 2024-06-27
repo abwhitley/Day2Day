@@ -47,27 +47,27 @@ const SingleDate = ({dateNumber}:SingleDateProps) => {
 					<Typography>{dateNumber}</Typography>
 				</CardContent>
 				<CardActions>
-					<div>
-					<Grid container spacing={ 2 }>
-						<Grid item xs={ 3 }>
-							{
-								displayIcon(date.tasks)
-							}
-						</Grid>
-						<Grid item xs={ 2 }>
-							<IconButton onClick={()=> {
-								if (stateShowTasks) {
-									setCardColor("white")
-									setStateShowTasks(false)
-								} else {
-									setCardColor("lightblue")
-									setStateShowTasks(true)
-									setSelectedDate(date)
-								}
-							}}><KeyboardArrowDownIcon /></IconButton>
-						</Grid>
-					</Grid>
-					</div>
+					{/*<div>*/}
+					{/*<Grid container spacing={ 2 }>*/}
+					{/*	<Grid item xs={ 3 }>*/}
+					{/*		{*/}
+					{/*			displayIcon(date.tasks)*/}
+					{/*		}*/}
+					{/*	</Grid>*/}
+					{/*	<Grid item xs={ 2 }>*/}
+					{/*		<IconButton onClick={()=> {*/}
+					{/*			if (stateShowTasks) {*/}
+					{/*				setCardColor("white")*/}
+					{/*				setStateShowTasks(false)*/}
+					{/*			} else {*/}
+					{/*				setCardColor("lightblue")*/}
+					{/*				setStateShowTasks(true)*/}
+					{/*				setSelectedDate(date)*/}
+					{/*			}*/}
+					{/*		}}><KeyboardArrowDownIcon /></IconButton>*/}
+					{/*	</Grid>*/}
+					{/*</Grid>*/}
+					{/*</div>*/}
 				</CardActions>
 			</Card>
 		</>
